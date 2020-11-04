@@ -1,0 +1,121 @@
+/* 
+1. Posicionamiento
+2. Modelo de caja (box model)
+3. Tipografía
+4. Efectos visuales
+5. Otros
+*/
+
+:root {
+    --dior-pink: #B2526B;  
+    --back-grey: #F6F6F6; 
+    --back-black: #201C1C;
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Montserrat', sans-serif; ;
+}
+header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-width: 320px;
+    height: 280px;
+    text-align: center;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.12) 3.75%, #F7F7F7 96.88%), #B2526B ;
+}
+header img {
+    width: 106px;
+    height: 95px;
+    align-self: center;
+    margin-top: 53px;
+    
+}
+.header-title-container {
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    height: 218px;
+    margin-top: 30px;
+    text-align: center;
+    align-self: center;
+}
+header h1 {
+    font-size: 2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 2.4rem;
+    color: #201C1C;
+    margin-bottom: 10px;
+}
+header p {
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1.9rem;
+    color: #201C1C;
+}
+main {
+    width: 100%;
+    height: auto;
+    background: #F7F7F7;
+}
+.main-menu-container {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding: 5px 0px;
+    background: #F7F7F7;
+    flex-direction: column;
+    justify-content: center;
+}
+.main-menu-container-button {
+    align-self: center;
+    width: 215px;
+    height: 48px;
+    margin-top: 15px;
+    padding: 14px 0px;
+    border: solid 1px #B2526B;
+    border-radius: 8px;
+    color: #B2526B;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 2rem;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.3);
+    text-decoration: none;
+} 
+.main-menu-container-whatsapp {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: center;
+    width: 215px;
+    height: auto;
+    margin-top: 15px;
+    padding: 5px 0px;
+    color: #B2526B;
+    font-size: 1.2rem;
+    font-weight: 300;
+    /* line-height: 1.4rem; */
+    text-align: left;
+    text-decoration: none;
+    
+}
+.main-menu-container-whatsapp p {
+    width: 75%;
+}
+.main-menu-container-whatsapp img {
+    width: 50px;
+    height: 50px;
+}
