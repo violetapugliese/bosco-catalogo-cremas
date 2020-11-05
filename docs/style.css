@@ -6,6 +6,12 @@
 5. Otros
 */
 
+@media screen and (max-width: 1024px) {}
+@media screen and (max-width: 767px) {}
+@media screen and (max-width: 479px) {}
+@media screen and (max-width: 320px) {}
+
+
 :root {
     --dior-pink: #B2526B;  
     --back-grey: #F6F6F6; 
@@ -30,9 +36,10 @@ header {
     justify-content: center;
     width: 100%;
     min-width: 320px;
-    height: 280px;
+    height: 320px;
     text-align: center;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.12) 3.75%, #F7F7F7 96.88%), #B2526B ;
+    border: none;
 }
 header img {
     width: 106px;
@@ -68,16 +75,18 @@ main {
     width: 100%;
     height: auto;
     background: #F7F7F7;
+    border: none;
 }
 .main-menu-container {
     position: relative;
     display: flex;
     width: 100%;
     height: auto;
-    padding: 60px 0px;
+    padding-top: 30px;
     background: #F7F7F7;
     flex-direction: column;
     justify-content: center;
+    border: none;
 }
 .main-menu-container-button {
     align-self: center;
@@ -118,4 +127,74 @@ main {
 .main-menu-container-whatsapp img {
     width: 50px;
     height: 50px;
+}
+.main-products-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    padding: 30px 0;
+    background-color: #F6F6F6;
+}
+.main-products-container h2 {
+    align-self: center;
+    width: 260px;
+    height: auto;
+    margin-bottom: 20px;
+    text-align: left;
+    font-size: 2.5rem;
+    font-weight: 300;
+    line-height: 3rem;
+    text-shadow: 0px 4px 4px rgba(107, 106, 106, 0.25);
+}
+.main-products-container-article {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 260px;
+    height: 345px;
+    margin-bottom: 20px;
+    padding: 0px 20px;
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.main-products-container-article img {
+    display: block;
+    align-self: center;
+    width: 90%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+.main-products-container-article h4 {
+    display: block;
+    align-self: left;
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.7rem;
+    color: #201C1C;
+    text-transform: uppercase;
+}
+.main-products-container-article p {
+    display: block;
+    align-self: left;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.4rem;
+    color: #201C1C;
+}
+.main-products-container-article .products-price {
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 2.1rem;
 }
