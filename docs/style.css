@@ -1,4 +1,4 @@
-/* 
+/*
 1. Posicionamiento
 2. Modelo de caja (box model)
 3. Tipografía
@@ -17,7 +17,7 @@
     font-style: normal;
     font-display: block;
   }
-  
+
   [class^="icon-"], [class*=" icon-"] {
     /* use !important to prevent issues with browser extensions that change. fonts */
     font-family: 'icomoon' !important;
@@ -26,7 +26,7 @@
     font-variant: normal;
     text-transform: none;
     line-height: 1;
-  
+
     /* Better Font Rendering =========== */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -44,8 +44,8 @@
     content: "\e905";
   }
 :root {
-    --dior-pink: #B2526B;  
-    --back-grey: #F6F6F6; 
+    --dior-pink: #B2526B;
+    --back-grey: #F6F6F6;
     --back-black: #201C1C;
 
 }
@@ -58,7 +58,7 @@
 
 html {
     font-size: 62.5%;
-    font-family: 'Montserrat', sans-serif; ;
+    font-family: 'Montserrat', sans-serif; 
 }
 .header-index {
     position: relative;
@@ -67,10 +67,10 @@ html {
     justify-content: center;
     width: 100%;
     min-width: 320px;
-    height: 100%;
+    height: 100vh;
     text-align: center;
     background-color: #fafafa;
-    background: linear-gradient(180deg, #B2526B 0%, rgba(255, 255, 255, 0) 320px), #F6F6F6;
+    background: linear-gradient(180deg, #B2526B 0%, rgba(255, 255, 255, 0) 280px), #F6F6F6;
     border: none;
     z-index: 102;
 }
@@ -78,8 +78,8 @@ html {
     max-width: 106px;
     height: 95px;
     align-self: center;
-    margin-top: 160px;
-    
+    margin-top: 100px;
+
 }
 .header-title-container-index {
     width: 90%;
@@ -164,7 +164,7 @@ header h1 {
     z-index: 103;
 }
 section {
-  padding-top: 80px; 
+  padding-top: 80px;
 }
 .navbar {
     display: flex;
@@ -204,7 +204,7 @@ section {
     text-align: center;
     box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.3);
     text-decoration: none;
-} 
+}
 .main-menu-container-whatsapp {
     display: flex;
     flex-direction: row;
@@ -220,7 +220,7 @@ section {
     /* line-height: 1.4rem; */
     text-align: left;
     text-decoration: none;
-    
+
 }
 .main-menu-container-whatsapp .whatsapp-button {
     width: 75%;
@@ -262,7 +262,7 @@ main {
     line-height: 3rem;
     text-shadow: 0px 4px 4px rgba(107, 106, 106, 0.25);
 }
-.main-products-big-container, 
+.main-products-big-container,
 .main-beautybox-big-container {
     display: flex;
     flex-wrap: wrap;
@@ -304,7 +304,7 @@ main {
     font-weight: 600;
     text-transform: uppercase;
     color: #F6F6F6;
-    text-align: center; 
+    text-align: center;
 }
 .main-products-container-article img {
     display: block;
@@ -403,7 +403,7 @@ main {
     font-weight: 600;
     text-transform: uppercase;
     color: #B2526B;
-    text-align: center; 
+    text-align: center;
 }
 .main-gift-container {
     position: relative;
@@ -446,7 +446,7 @@ main {
     align-self: center;
     margin: 20px 0px;
     width: 115px;
-    height: 127px; 
+    height: 127px;
 }
 .main-gift-container a {
     display: flex;
@@ -465,7 +465,7 @@ main {
     text-align: center;
     text-decoration: none;
     color: #B2526B;
-    line-height: 1.4rem; 
+    line-height: 1.4rem;
 }
 footer {
     position: relative;
@@ -494,7 +494,7 @@ footer {
 .hashtag {
    font-size: 1.2rem;
    font-weight: 400;
-   text-align: right; 
+   text-align: right;
    color: #F7F7F7;
 }
 .footer-meddia-logos {
