@@ -6,12 +6,41 @@
 5. Otros
 */
 
-/* @media screen and (max-width: 1024px) {}
-@media screen and (max-width: 767px) {}
-@media screen and (max-width: 479px) {}
-@media screen and (max-width: 320px) {} */
-
-
+@font-face {
+    font-family: 'icomoon';
+    src:  url('fonts/icomoon.eot?raszhp');
+    src:  url('fonts/icomoon.eot?raszhp#iefix') format('embedded-opentype'),
+      url('fonts/icomoon.ttf?raszhp') format('truetype'),
+      url('fonts/icomoon.woff?raszhp') format('woff'),
+      url('fonts/icomoon.svg?raszhp#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-instagram:before {
+    content: "\e906";
+  }
+  .icon-facebook:before {
+    content: "\e907";
+  }
+  .icon-whatsapp:before {
+    content: "\e905";
+  }
 :root {
     --dior-pink: #B2526B;  
     --back-grey: #F6F6F6; 
@@ -39,7 +68,7 @@ header {
     height: auto;
     text-align: center;
     background-color: #fafafa;
-    background: linear-gradient(180deg, #B2526B 0%, rgba(255, 255, 255, 0) 21.7%), #F6F6F6;
+    background: linear-gradient(180deg, #B2526B 0%, rgba(255, 255, 255, 0) 120px), #F6F6F6;
     border: none;
     z-index: 102;
 }
@@ -78,7 +107,7 @@ header .header-subtitle {
     display: flex;
     width: 100%;
     height: auto;
-    padding-top: 30px;
+    margin: 20px 0px;
     flex-direction: column;
     justify-content: center;
     border: none;
@@ -107,7 +136,7 @@ header .header-subtitle {
     align-self: center;
     width: 215px;
     height: auto;
-    margin-top: 15px;
+    margin: 15px 0px 20px;
     padding: 5px 0px;
     color: #B2526B;
     font-size: 1.2rem;
@@ -167,7 +196,7 @@ main {
     align-self: center;
     width: 260px;
     height: 380px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     padding: 0px 20px;
     background-color: #FFFFFF;
     border: none;
@@ -243,9 +272,10 @@ main {
     border-radius: 8px;
     font-size: 1.2rem;
     font-weight: 600;
+    text-align: center;
     text-decoration: none;
     color: #B2526B;
-    line-height: 1.4rem;  
+    line-height: 1.4rem; 
 }
 .main-beautybox-container {
     position: relative;
@@ -255,7 +285,7 @@ main {
     width: 100%;
     height: auto;
     padding: 30px 0;
-    background: linear-gradient(180deg, #B2526B 0%, rgba(255, 255, 255, 0.04) 100%), #B2526B;
+    background: linear-gradient(180deg, #B2526B 0%, rgba(246, 246, 246, 0.32) 45.22%), linear-gradient(180deg, rgba(246, 246, 246, 0.42) 58.94%, #B2526B 100%);
 }
 .main-beautybox-container h2 {
     align-self: center;
@@ -266,7 +296,7 @@ main {
     font-size: 2.5rem;
     font-weight: 300;
     line-height: 3rem;
-    text-shadow: 0px 4px 4px rgba(107, 106, 106, 0.25);
+    text-shadow: 0px 4px 4px rgba(107, 106, 106, 1.5);
     color: #F6F6F6;
 }
 .beautybox-circle {
@@ -279,14 +309,14 @@ main {
     width: 74px;
     height: 74px;
     border-radius: 50%;
-    background-color: #201C1C;
+    background-color: #F6F6F6;
 }
 .beautybox-circle .send{
     margin: 0px;
     font-size: 1.2rem;
     font-weight: 600;
     text-transform: uppercase;
-    color: #F6F6F6;
+    color: #B2526B;
     text-align: center; 
 }
 .main-gift-container {
@@ -296,5 +326,89 @@ main {
     justify-content: center;
     width: 100%;
     height: auto;
+    padding: 20px 0px;
     background-color: #F6F6F6;
 }
+.gift-text {
+    align-self: center;
+    margin-top: 40px;
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 3.7rem;
+    text-align: center;
+    color: #201C1C;
+}
+.gift-text b {
+    color: #B2526B;
+}
+.main-gift-container img {
+    align-self: center;
+    margin: 20px 0px;
+    width: 115px;
+    height: 127px; 
+}
+.main-gift-container a {
+    display: flex;
+    align-self: center;
+    width: 114px;
+    height: 26px;
+    margin: 25px auto 40px;
+    padding: 5px 25px;
+    background: #FFFFFF;
+    border: 1px solid #B2526B;
+    box-sizing: border-box;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    color: #B2526B;
+    line-height: 1.4rem; 
+}
+footer {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+    width: 100%;
+    height: 180px;
+    background-color: #B2526B;
+}
+.footer-logo {
+    width: 79px;
+    height: 74px;
+}
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    margin: 5px 0px;
+    padding-top: 10px;
+    width: 85px;
+    height: 74px;
+}
+.hashtag {
+   font-size: 1.2rem;
+   font-weight: 400;
+   text-align: right; 
+   color: #F7F7F7;
+}
+.footer-meddia-logos {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    width: 85px;
+    height: auto;
+}
+.meddia-logo {
+    font-size: 2rem;
+    color: #F6F6F6;
+}
+
+@media screen and (max-width: 320px) {}
+@media screen and (max-width: 479px) {}
+@media screen and (max-width: 767px) {}
+@media screen and (max-width: 1024px) {}
