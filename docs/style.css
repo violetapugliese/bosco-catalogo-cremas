@@ -31,7 +31,9 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
-  
+  .icon-menu:before {
+    content: "\e904";
+  }
   .icon-instagram:before {
     content: "\e906";
   }
@@ -58,28 +60,28 @@ html {
     font-size: 62.5%;
     font-family: 'Montserrat', sans-serif; ;
 }
-header {
+.header-index {
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 100%;
     min-width: 320px;
-    height: auto;
+    height: 100vh;
     text-align: center;
     background-color: #fafafa;
-    background: linear-gradient(180deg, #B2526B 0%, rgba(255, 255, 255, 0) 120px), #F6F6F6;
+    background: linear-gradient(180deg, #B2526B 0%, rgba(255, 255, 255, 0) 320px), #F6F6F6;
     border: none;
     z-index: 102;
 }
-header img {
+.header-index img {
     max-width: 106px;
     height: 95px;
     align-self: center;
     margin-top: 53px;
     
 }
-.header-title-container {
+.header-title-container-index {
     width: 90%;
     min-width: 288px;
     max-width: 900px;
@@ -88,7 +90,7 @@ header img {
     text-align: center;
     align-self: center;
 }
-header h1 {
+.header-index h1 {
     font-size: 2rem;
     font-weight: 400;
     text-transform: uppercase;
@@ -96,23 +98,81 @@ header h1 {
     color: #201C1C;
     margin-bottom: 10px;
 }
-header .header-subtitle {
+.header-index .header-subtitle {
     font-size: 1.6rem;
     font-weight: 300;
     line-height: 1.9rem;
     color: #201C1C;
 }
-.main-menu-container {
-    position: relative;
+
+header {
+    position: fixed;
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     width: 100%;
+    min-width: 320px;
+    height: 80px;
+    background: linear-gradient(180deg, #B2526B 0%, rgba(255, 255, 255, 0) 80px), #F6F6F6;
+    border: none;
+    z-index: 102;
+}
+.header-big-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+    width: 90%;
+}
+header img {
+    max-width: 52px;
+    height: 46px;
+    margin-top: 5px;
+}
+.header-title-container {
+    width: auto;
     height: auto;
-    margin: 20px 0px;
+    text-align: center;
+}
+header h1 {
+    align-self: flex-end;
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 2.4rem;
+    color: #201C1C;
+}
+.burger-button {
+    border-radius: 50%;
+    display: block;
+    line-height: 40px;
+    text-align: center;
+    color: #201c1cb4;
+    font-size: 19px;
+}
+section {
+  padding-top: 80px; 
+}
+.main-menu-container {
+    display: flex;
     flex-direction: column;
     justify-content: center;
-    border: none;
+    position: fixed;
+    background-color: #f6f6f6dc;
     z-index: 101;
+    top: 0;
+    left: -100vw;
+    width:100vw;
+    height: 100vh;
+    padding: 40px 0px;
+    transition: .5s;
 }
+
+.main-menu-container.is-active {
+    left: 0;
+}
+
 .main-menu-container-button {
     align-self: center;
     width: 215px;
@@ -168,16 +228,10 @@ main {
     width: 100%;
     height: auto;
     padding: 10px 0;
+    padding-top: 85px;
     background-color: #F6F6F6;
 }
-.up-to-menu {
-    position: fixed;
-    display: inline-block;
-    align-self: center;
-    top: 26px;
-    right: 35px;
-    z-index: 100;
-}
+
 .main-products-container h2 {
     display: block;
     align-self: center;
@@ -298,6 +352,7 @@ main {
     width: 100%;
     height: auto;
     padding: 30px 0;
+    padding-top: 85px;
     background: linear-gradient(180deg, #B2526B 0%, rgba(246, 246, 246, 0.32) 45.22%), linear-gradient(180deg, rgba(246, 246, 246, 0.42) 58.94%, #B2526B 100%);
 }
 .main-beautybox-container h2 {
@@ -341,7 +396,7 @@ main {
     justify-content: center;
     width: 100%;
     height: auto;
-    padding: 20px 0px;
+    padding: 80px 0px;
     background-color: #F6F6F6;
 }
 .main-gift-big-container {
@@ -446,6 +501,9 @@ footer {
     }
 }
 @media screen and (min-width: 767px) {
+    header h1 {
+        zoom: 1.5;
+    }
     .main-gift-big-container {
         align-self: center;
         flex-direction: row;
