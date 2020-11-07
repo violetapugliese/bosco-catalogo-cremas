@@ -179,15 +179,28 @@ main {
     z-index: 100;
 }
 .main-products-container h2 {
+    display: block;
     align-self: center;
-    width: 260px;
+    width: 90%;
+    max-width: 855px;
     height: auto;
-    margin: 0px 0px 20px 0;
+    margin: 0px 0px 25px 0px;
+    margin-left: 1%;
     text-align: left;
     font-size: 2.5rem;
     font-weight: 300;
     line-height: 3rem;
     text-shadow: 0px 4px 4px rgba(107, 106, 106, 0.25);
+}
+.main-products-big-container, 
+.main-beautybox-big-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 90%;
+    height: auto;
+    margin: 0 auto;
+
 }
 .main-products-container-article {
     position: relative;
@@ -289,14 +302,16 @@ main {
 }
 .main-beautybox-container h2 {
     align-self: center;
-    width: 260px;
+    width: 90%;
+    max-width: 855px;
     height: auto;
-    margin: 20px 0px;
+    margin: 25px 0px;
+    margin-left: 1%;
     text-align: left;
     font-size: 2.5rem;
     font-weight: 300;
     line-height: 3rem;
-    text-shadow: 0px 4px 4px rgba(107, 106, 106, 1.5);
+    text-shadow: 0px 4px 4px rgba(107, 106, 106, 0.90);
     color: #F6F6F6;
 }
 .beautybox-circle {
@@ -329,6 +344,16 @@ main {
     padding: 20px 0px;
     background-color: #F6F6F6;
 }
+.main-gift-big-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    padding: 20px 0px;
+    background-color: #F6F6F6;
+}
 .gift-text {
     align-self: center;
     margin-top: 40px;
@@ -341,7 +366,12 @@ main {
 .gift-text b {
     color: #B2526B;
 }
-.main-gift-container img {
+.gift-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.gift-image {
     align-self: center;
     margin: 20px 0px;
     width: 115px;
@@ -408,7 +438,37 @@ footer {
     color: #F6F6F6;
 }
 
-@media screen and (max-width: 320px) {}
-@media screen and (max-width: 479px) {}
-@media screen and (max-width: 767px) {}
-@media screen and (max-width: 1024px) {}
+
+@media screen and (min-width: 320px) {}
+@media screen and (min-width: 479px) {
+    
+    header {
+        zoom: 1.5;
+    }
+
+    .main-products-container-article{
+        margin-right: 25px;
+    }
+}
+@media screen and (min-width: 767px) {
+    .main-gift-big-container {
+        align-self: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        max-width: 770px;
+        height: 450px;
+    }
+    .gift-text {
+        margin: 0px;
+        zoom: 1.5;
+    }
+    .main-gift-big-container img {
+        zoom: 1.5;
+    }
+    .main-gift-big-container a {
+        zoom: 1.5;
+    }
+}
+@media screen and (min-width: 1024px) {}
