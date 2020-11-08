@@ -79,10 +79,10 @@ html {
 .header-index-big-container{
     flex-direction: column;
     width: fit-content;
-    /* height: 80vh; */
+    height: 70%;
     display: flex;
     justify-content: space-around;
-    margin: 10vh auto;
+    margin: 15% auto;
 }
 .header-index img {
     max-width: 106px;
@@ -142,7 +142,7 @@ html {
 .header-big-container{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: baseline;
     width: 90%;
 }
@@ -167,6 +167,8 @@ header h1 {
 .ham {
     border-radius: 50%;
     display: block;
+    width: 51px;
+    height: 46px;
     line-height: 40px;
     text-align: center;
     color: #201c1cb4;
