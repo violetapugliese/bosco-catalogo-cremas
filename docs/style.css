@@ -79,7 +79,7 @@ html {
 .header-index-big-container{
     flex-direction: column;
     width: fit-content;
-    height: 80vh;
+    /* height: 80vh; */
     display: flex;
     justify-content: space-around;
     margin: 10vh auto;
