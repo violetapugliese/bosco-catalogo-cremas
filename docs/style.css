@@ -168,8 +168,9 @@ section {
 .navbar {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     position: absolute;
+    padding: 100px 0px;
     background-color: #f6f6f6ee;
     z-index: 101;
     top: 80px;
