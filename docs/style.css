@@ -506,6 +506,10 @@ footer {
 .meddia-logo {
     font-size: 2rem;
     color: #F6F6F6;
+    text-decoration: none;
+}
+footer a {
+    text-decoration: none;
 }
 
 
