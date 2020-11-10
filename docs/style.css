@@ -71,12 +71,12 @@ html {
     width: 100%;
     min-width: 320px;
     height: auto;
-    transform: translateY(20vh);
+    transform: translateY(10vh);
     border: none;
 }
 .header-index img {
-    max-width: 106px;
-    height: 95px;
+    max-width: 140px;
+    height: 140px;
     align-self: center;
 }
 .header-title-container-index {
@@ -84,7 +84,7 @@ html {
     min-width: 288px;
     max-width: 900px;
     height: auto;
-    margin-top: 30px;
+    margin-top: 20px;
     text-align: center;
     align-self: center;
 }
@@ -93,14 +93,14 @@ html {
     font-weight: 400;
     text-transform: uppercase;
     line-height: 2.4rem;
-    color: #201C1C;
+    color: #B69D6E;
     margin-bottom: 10px;
 }
 .header-index .header-subtitle {
     font-size: 1.6rem;
     font-weight: 300;
     line-height: 1.9rem;
-    color: #201C1C;
+    color: #B69D6E;
 }
 .main-menu-container-index {
     display: flex;
@@ -121,21 +121,21 @@ html {
     width: 100%;
     min-width: 320px;
     height: 80px;
-    background: linear-gradient(180deg, #B2526B 0%, rgba(255, 255, 255, 0) 110%), #F6F6F6;
+    background-color: #F6F6F6;
     border: none;
     z-index: 102;
+    box-shadow: 0px 4px 10px rgba(89, 73, 30, 0.1); ;
 }
 .header-big-container{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
     width: 90%;
 }
 .header-logo {
-    max-width: 52px;
-    height: 46px;
-    margin-top: 14px;
+    max-width: 62px;
+    height: 62px;
 }
 .header-title-container {
     width: auto;
@@ -148,7 +148,7 @@ header h1 {
     font-weight: 400;
     text-transform: uppercase;
     line-height: 2.4rem;
-    color: #201C1C;
+    color: #B69D6E;
 }
 .ham {
     border-radius: 50%;
@@ -157,7 +157,7 @@ header h1 {
     height: 46px;
     line-height: 40px;
     text-align: center;
-    color: #201c1cb4;
+    color: #B69D6E;
     font-size: 19px;
     cursor: pointer;
     z-index: 103;
@@ -368,7 +368,7 @@ main {
     height: auto;
     padding: 30px 0;
     padding-top: 85px;
-    background: linear-gradient(180deg, #B2526B 0%, rgba(246, 246, 246, 0.32) 45.22%), linear-gradient(180deg, rgba(246, 246, 246, 0.42) 58.94%, #B2526B 100%);
+    background:linear-gradient(180deg, #B2526B 0%, rgba(255, 255, 255, 0) 22.92%), linear-gradient(180deg, #F6F6F6 90.3%, #C5A58C 100%);
 }
 .main-beautybox-container h2 {
     align-self: center;
@@ -478,8 +478,8 @@ footer {
     background-color: #B2526B;
 }
 .footer-logo {
-    width: 79px;
-    height: 74px;
+    width: 80px;
+    height: 80px;
 }
 .footer-container {
     display: flex;
