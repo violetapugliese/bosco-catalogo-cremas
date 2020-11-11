@@ -59,24 +59,26 @@
 html {
     font-size: 62.5%;
     font-family: 'Montserrat', sans-serif;
-    background: linear-gradient(180deg, #B2526B 0%, rgba(255, 255, 255, 0) 22%), #F6F6F6;
     background-size: 100%;
-    background-repeat: no-repeat;
+    background: #B69D6E;
 }
 .header-index {
+    position: absolute;
+    background:  linear-gradient(180deg, #B2526B 0%, rgba(255, 255, 255, 0) 10%), linear-gradient(180deg, #F6F6F6 90.3%,  #B69D6E8c 100%);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
     min-width: 320px;
-    height: auto;
-    transform: translateY(10vh);
+    height: 100%;
     border: none;
+    padding: 10% 0px;
 }
 .header-index img {
     max-width: 140px;
-    height: 140px;
+    width: 30%;
+    height: auto;
     align-self: center;
 }
 .header-title-container-index {
@@ -109,7 +111,7 @@ html {
     position: relative;
     align-self: center;
     z-index: 101;
-    width: fit-content;
+    width: 90%;
     height: fit-content;
 }
 .header-page {
@@ -128,19 +130,28 @@ html {
 }
 .header-big-container{
     display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 90%;
+}
+.header-logo-container{
+    display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
     width: 90%;
 }
+.header-img-logo {
+    display: flex;
+}
 .header-logo {
+    align-self: center;
     max-width: 62px;
     height: 62px;
 }
 .header-title-container {
-    width: auto;
-    height: auto;
-    text-align: center;
+    padding-left: 10px;
+    width: 45%;
+    text-align: left;
 }
 header h1 {
     align-self: flex-end;
@@ -153,12 +164,12 @@ header h1 {
 .ham {
     border-radius: 50%;
     display: block;
-    width: 51px;
-    height: 46px;
+    width: 40px;
+    height: 40px;
     line-height: 40px;
-    text-align: center;
+    text-align: right;
     color: #B69D6E;
-    font-size: 19px;
+    font-size: 2.0rem;
     cursor: pointer;
     z-index: 103;
 }
@@ -189,15 +200,16 @@ section {
 
 .main-menu-container-button {
     align-self: center;
-    width: 215px;
+    width: 50%;
     height: 48px;
+    max-width: 216px;
     margin-top: 20px;
     padding: 14px 0px;
     background-color: #F6F6F6;
     border: solid 1px #B2526B;
     border-radius: 8px;
     color: #B2526B;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     font-weight: 600;
     line-height: 2rem;
     text-align: center;
@@ -206,10 +218,12 @@ section {
 }
 .main-menu-container-whatsapp {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-self: center;
-    width: 215px;
+    width: 50%;
+    max-width: 216px;
     height: auto;
     margin: 15px 0px 0px;
     padding: 5px 0px;
@@ -222,10 +236,10 @@ section {
 
 }
 .main-menu-container-whatsapp .whatsapp-button {
-    width: 75%;
+    width: 155px;
 }
 .main-menu-container-whatsapp .menu-logo-whatsapp {
-    margin: 0px;
+    margin-top: 10px;
     width: 50px;
     height: 50px;
 }
@@ -253,12 +267,13 @@ main {
     width: 90%;
     max-width: 855px;
     height: auto;
-    margin: 0px 0px 25px 0px;
+    margin: 5px 0px 25px 0px;
     margin-left: 1%;
     text-align: left;
     font-size: 2.5rem;
     font-weight: 300;
     line-height: 3rem;
+    color: #B2526B;
     text-shadow: 0px 4px 4px rgba(107, 106, 106, 0.25);
 }
 .main-products-big-container,
@@ -305,7 +320,8 @@ main {
     color: #F6F6F6;
     text-align: center;
 }
-.main-products-container-article img {
+.main-products-container-article img,
+.main-beautybox-container-article img {
     display: block;
     align-self: center;
     width: 90%;
@@ -313,7 +329,8 @@ main {
     margin-bottom: 10px;
     border-radius: 8px;
 }
-.main-products-container-article h4 {
+.main-products-container-article h4,
+.main-beautybox-container-article h4 {
     display: block;
     align-self: left;
     margin-bottom: 10px;
@@ -323,7 +340,8 @@ main {
     color: #201C1C;
     text-transform: uppercase;
 }
-.main-products-container-article p {
+.main-products-container-article p,
+.main-beautybox-container-article p {
     display: block;
     align-self: left;
     margin-bottom: 10px;
@@ -332,7 +350,8 @@ main {
     line-height: 1.4rem;
     color: #201C1C;
 }
-.main-products-container-article .products-price {
+.main-products-container-article .products-price,
+.main-beautybox-container-article .products-price {
     display: block;
     text-align: center;
     margin-top: 20px;
@@ -368,7 +387,7 @@ main {
     height: auto;
     padding: 30px 0;
     padding-top: 85px;
-    background:linear-gradient(180deg, #B2526B 0%, rgba(255, 255, 255, 0) 22.92%), linear-gradient(180deg, #F6F6F6 90.3%, #C5A58C 100%);
+    background:linear-gradient(180deg, #B2526B 0%, rgba(255, 255, 255, 0) 36%), linear-gradient(180deg, #F6F6F6 90.3%, #C5A58C 100%);
 }
 .main-beautybox-container h2 {
     align-self: center;
@@ -383,6 +402,20 @@ main {
     line-height: 3rem;
     text-shadow: 0px 4px 4px rgba(107, 106, 106, 0.90);
     color: #F6F6F6;
+}
+.main-beautybox-container-article {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 260px;
+    height: 445px;
+    margin-bottom: 40px;
+    padding: 0px 20px;
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .beautybox-circle {
     display: flex;
@@ -512,11 +545,19 @@ footer a {
     text-decoration: none;
 }
 
-
+@media screen and (max-height: 600px) {
+    .header-index {
+        position: relative;
+    }
+}
 @media screen and (min-width: 320px) {}
 @media screen and (min-width: 479px) {
-    .main-products-container-article{
+    .main-products-container-article, 
+    .main-beautybox-container-article {
         margin-right: 25px;
+    }
+    .main-menu-container-button {
+        font-size: 1.8rem;
     }
 }
 @media screen and (min-width: 767px) {
@@ -542,5 +583,6 @@ footer a {
     .main-gift-big-container a {
         zoom: 1.5;
     }
+    
 }
 @media screen and (min-width: 1024px) {}
