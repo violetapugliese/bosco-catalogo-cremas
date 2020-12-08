@@ -92,7 +92,7 @@ html {
 }
 .header-index h1 {
     font-size: 2rem;
-    font-weight: 400;
+    font-weight: 700;
     text-transform: uppercase;
     line-height: 2.4rem;
     color: #B69D6E;
@@ -100,7 +100,7 @@ html {
 }
 .header-index .header-subtitle {
     font-size: 1.6rem;
-    font-weight: 300;
+    font-weight: 600;
     line-height: 1.9rem;
     color: #B69D6E;
 }
@@ -156,7 +156,7 @@ html {
 header h1 {
     align-self: flex-end;
     font-size: 1.4rem;
-    font-weight: 400;
+    font-weight: 700;
     text-transform: uppercase;
     line-height: 2.4rem;
     color: #B69D6E;
@@ -207,7 +207,7 @@ section {
     padding: 14px 0px;
     background-color: #F6F6F6;
     border: solid 1px #B2526B;
-    border-radius: 8px;
+    border-radius: 28px;
     color: #B2526B;
     font-size: 1.4rem;
     font-weight: 600;
@@ -222,8 +222,7 @@ section {
     flex-direction: row;
     justify-content: center;
     align-self: center;
-    width: 50%;
-    max-width: 216px;
+    align-items: center;
     height: auto;
     margin: 15px 0px 0px;
     padding: 5px 0px;
@@ -240,8 +239,8 @@ section {
 }
 .main-menu-container-whatsapp .menu-logo-whatsapp {
     margin-top: 10px;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
 }
 main {
     width: 100%;
@@ -265,13 +264,11 @@ main {
     display: block;
     align-self: center;
     width: 90%;
-    max-width: 855px;
     height: auto;
-    margin: 5px 0px 25px 0px;
+    margin: 20px 0px 25px 0px;
     margin-left: 1%;
     text-align: left;
     font-size: 2.5rem;
-    font-weight: 300;
     line-height: 3rem;
     color: #B2526B;
     text-shadow: 0px 4px 4px rgba(107, 106, 106, 0.25);
@@ -287,12 +284,14 @@ main {
 
 }
 .main-products-container-article {
+    justify-content: space-around;
     position: relative;
     display: flex;
     flex-direction: column;
     align-self: center;
-    width: 260px;
-    height: 380px;
+    max-width: 345px;
+    width: 90%;
+    height: 500px;
     margin-bottom: 40px;
     padding: 0px 20px;
     background-color: #FFFFFF;
@@ -326,7 +325,6 @@ main {
     align-self: center;
     width: 90%;
     height: auto;
-    margin-bottom: 10px;
     border-radius: 8px;
 }
 .main-products-container-article h4,
@@ -335,7 +333,7 @@ main {
     align-self: left;
     margin-bottom: 10px;
     font-size: 1.4rem;
-    font-weight: 600;
+    font-weight: 400;
     line-height: 1.7rem;
     color: #201C1C;
     text-transform: uppercase;
@@ -353,26 +351,27 @@ main {
 .main-products-container-article .products-price,
 .main-beautybox-container-article .products-price {
     display: block;
-    text-align: center;
     margin-top: 20px;
     margin-bottom: 10px;
-    font-size: 1.8rem;
-    font-weight: 400;
+    font-size: 2rem;
+    font-weight: 600;
     line-height: 2.1rem;
 }
 .products-button {
     display: flex;
-    align-self: center;
-    width: 114px;
-    height: 30px;
-    margin: 15px auto 0px;
+    align-items: center;
+    align-self: flex-end;
+    justify-content: space-around;
+    width: 180px;
+    height: 40px;
+    margin: 0px auto 20px;
     padding: 5px 22px;
     background: #FFFFFF;
     border: 1px solid #B2526B;
     box-sizing: border-box;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 8px;
-    font-size: 1.4rem;
+    border-radius: 28px;
+    font-size: 1.6rem;
     font-weight: 600;
     text-align: center;
     text-decoration: none;
@@ -392,24 +391,24 @@ main {
 .main-beautybox-container h2 {
     align-self: center;
     width: 90%;
-    max-width: 855px;
     height: auto;
     margin: 25px 0px;
     margin-left: 1%;
     text-align: left;
     font-size: 2.5rem;
-    font-weight: 300;
     line-height: 3rem;
     text-shadow: 0px 4px 4px rgba(107, 106, 106, 0.90);
     color: #F6F6F6;
 }
 .main-beautybox-container-article {
     position: relative;
+    justify-content: space-around;
     display: flex;
     flex-direction: column;
     align-self: center;
-    width: 260px;
-    height: 445px;
+    max-width: 345px;
+    width: 90%;
+    height: 500px;
     margin-bottom: 40px;
     padding: 0px 20px;
     background-color: #FFFFFF;
@@ -426,15 +425,16 @@ main {
     top: -15px;
     width: 74px;
     height: 74px;
+    color: #F6F6F6;
     border-radius: 50%;
-    background-color: #F6F6F6;
+    background-color:#B2526B;
 }
 .beautybox-circle .send{
     margin: 0px;
     font-size: 1.2rem;
     font-weight: 600;
     text-transform: uppercase;
-    color: #B2526B;
+    color: #F6F6F6;
     text-align: center;
 }
 .main-gift-container {
@@ -483,15 +483,17 @@ main {
 .main-gift-container a {
     display: flex;
     align-self: center;
-    width: 114px;
-    height: 30px;
+    align-items: center;
+    justify-content: space-around;
+    width: 180px;
+    height: 40px;
     margin: 25px auto 0px;
     padding: 6px 20px;
     background: #FFFFFF;
     border: 1px solid #B2526B;
     box-sizing: border-box;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 8px;
+    border-radius: 28px;
     font-size: 1.4rem;
     font-weight: 600;
     text-align: center;
@@ -536,6 +538,11 @@ footer {
     width: 85px;
     height: auto;
 }
+.meddia-button {
+    font-size: 1.6rem;
+    color: #B2526B;
+    text-decoration: none;
+}
 .meddia-logo {
     font-size: 2rem;
     color: #F6F6F6;
@@ -544,7 +551,23 @@ footer {
 footer a {
     text-decoration: none;
 }
+.gift-foto {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-image: url(./images/adornosnavidad\ \(2\).png);
+    background-size: 20%;
+    margin: 0px auto;
+    width: 100%;
+    height: auto;
+    text-align: left;
+}
 
+.gift-foto img {
+    width: 50%;
+    min-width: 320px;
+}
 @media screen and (max-height: 600px) {
     .header-index {
         position: relative;
