@@ -502,6 +502,9 @@ main {
     line-height: 1.4rem;
 }
 footer {
+    background-color: #B2526B;  
+}
+.footer {
     position: relative;
     display: flex;
     flex-direction: row;
@@ -537,6 +540,11 @@ footer {
     margin-top: 10px;
     width: 85px;
     height: auto;
+}
+.copyRigth {
+    color: #F6F6F6;
+    text-align: center;
+    padding-bottom: 15px;
 }
 .meddia-button {
     font-size: 1.6rem;
