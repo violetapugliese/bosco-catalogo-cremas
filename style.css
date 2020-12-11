@@ -494,7 +494,7 @@ main {
     box-sizing: border-box;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 28px;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-weight: 600;
     text-align: center;
     text-decoration: none;
@@ -568,6 +568,27 @@ footer a {
 .gift-foto img {
     width: 40%;
     min-width: 320px;
+    
+}
+.text-contactanos-container {
+    justify-content: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    max-width: 345px;
+    width: 90%;
+    height: 270px;
+    margin-bottom: 40px;
+    padding: 0px 20px;
+    border: none;
+}
+.text-contactanos {
+    width: auto;
+    text-align: center;
+    font-size: 2.7rem;
+    margin-bottom: 20px;
+    color: #B2526B;
 }
 @media screen and (max-height: 600px) {
     .header-index {
