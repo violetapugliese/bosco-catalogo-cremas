@@ -574,8 +574,8 @@ footer a {
 }
 
 .gift-foto img {
-    max-width: 320px;
-    min-width: 320px;   
+    width: 320px;
+    height: 320px;   
 }
 .text-contactanos-container {
     justify-content: center;
