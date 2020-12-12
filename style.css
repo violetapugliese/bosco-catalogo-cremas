@@ -357,6 +357,50 @@ main {
     font-weight: 600;
     line-height: 2.1rem;
 }
+
+.caja {
+    justify-content: space-around;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    max-width: 345px;
+    width: 90%;
+    height: 200px;
+    margin-bottom: 40px;
+    padding: 40px 20px 0;
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.caja h4 {
+    display: block;
+    align-self: left;
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.7rem;
+    color: #201C1C;
+    text-transform: uppercase;
+}
+.caja p{
+    display: block;
+    align-self: left;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.4rem;
+    color: #201C1C;
+}
+.caja .products-price {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 2.1rem;
+}
 .products-button {
     display: flex;
     align-items: center;
@@ -568,14 +612,12 @@ footer a {
     background-size: 20%;
     margin: 0px auto;
     padding: 10%;
-    width: 100%;
     height: auto;
-    text-align: left;
 }
 
 .gift-foto img {
-    width: 320px;
-    height: 320px;   
+    width: 290px;
+    height: 290px;   
 }
 .text-contactanos-container {
     justify-content: center;
@@ -596,22 +638,6 @@ footer a {
     font-size: 2.7rem;
     margin-bottom: 19px;
     color: #B2526B;
-}
-.caja {
-    justify-content: space-around;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-    max-width: 345px;
-    width: 90%;
-    height: 200px;
-    margin-bottom: 40px;
-    padding: 0px 20px;
-    background-color: #FFFFFF;
-    border: none;
-    border-radius: 8px;
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 }
 @media screen and (max-height: 600px) {
     .header-index {
