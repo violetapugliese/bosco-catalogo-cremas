@@ -91,7 +91,7 @@ html {
     align-self: center;
 }
 .header-index h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 700;
     text-transform: uppercase;
     line-height: 2.4rem;
@@ -150,7 +150,7 @@ html {
 }
 .header-title-container {
     padding-left: 10px;
-    width: 45%;
+    width: 48%;
     text-align: left;
 }
 header h1 {
