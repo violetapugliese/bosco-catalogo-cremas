@@ -654,6 +654,9 @@ footer a {
     .main-menu-container-button {
         font-size: 1.8rem;
     }
+    .caja{
+        margin-right: 25px;
+    }
 }
 @media screen and (min-width: 767px) {
     .header-title-container {
