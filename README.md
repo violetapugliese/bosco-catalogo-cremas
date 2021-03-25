@@ -1,5 +1,4 @@
 # bosco-catalogo-cremas
-Website creado para ser distribuído entre pacientes y allegados de Bosco Clínica Estética, para promocionar ventas. 
-Debido a que el trato entre pacientes es personal, la página no está vinculada con plataformas de pago, sino que posee links de redireccionamiento que contactan con la encargada de ventas de la pequeña empresa.
+Website creado para ser distribuído entre pacientes y público de Bosco Clínica Estética, para promocionar ventas. 
 
-Es de diseño sensillo, pensado para el target al que está dirigido.
+El diseño esta orientado a un target que aprecia la exclusividad y el trato "one to one". No está vinculada con plataformas de pago externas, sino que posee links de redireccionamiento directo para contactar con el sector de ventas.
