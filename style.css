@@ -216,6 +216,10 @@ section {
     box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.3);
     text-decoration: none;
 }
+.main-menu-container-button:hover {
+    background-color: #B2526B;
+    color: #FFFFFF;
+}
 .main-menu-container-whatsapp {
     display: flex;
     flex-wrap: wrap;
@@ -291,13 +295,18 @@ main {
     align-self: center;
     max-width: 345px;
     width: 90%;
-    height: 500px;
     margin-bottom: 40px;
     padding: 0px 20px;
     background-color: #FFFFFF;
     border: none;
     border-radius: 8px;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.card-height-500 {
+    height: 500px;
+}
+.card-height-auto {
+    height: 200px;
 }
 .products-circle {
     display: flex;
@@ -323,7 +332,7 @@ main {
 .main-beautybox-container-article img {
     display: block;
     align-self: center;
-    width: 90%;
+    width: 240px;
     height: auto;
     border-radius: 8px;
 }
@@ -420,6 +429,10 @@ main {
     text-align: center;
     text-decoration: none;
     color: #B2526B;
+}
+.products-button:hover {
+    background-color: #B2526B;
+    color: #FFFFFF;
 }
 .main-beautybox-container {
     position: relative;
@@ -545,6 +558,10 @@ main {
     color: #B2526B;
     line-height: 1.4rem;
 }
+.main-gift-container a:hover{
+    background-color: #B2526B;
+    color: #FFFFFF;
+}
 footer {
     background-color: #B2526B;  
 }
@@ -592,7 +609,6 @@ footer {
 }
 .meddia-button {
     font-size: 1.6rem;
-    color: #B2526B;
     text-decoration: none;
 }
 .meddia-logo {
@@ -602,6 +618,7 @@ footer {
 }
 footer a {
     text-decoration: none;
+    color: #201C1C;
 }
 .gift-foto {
     position: relative;
