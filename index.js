@@ -135,12 +135,21 @@ const products = [
         msj: "Contorno%20de%20Ojos%20Solution%20Lift",
     },
     {
+        id: "33",
+        name: "My Cream",
+        description: "Crema personalizada, con ampollas específicas",
+        price: "$5700.-",
+        height: "card-height-200",
+        img: "../images/my-cream.png",
+        msj: "Contorno%20de%20ojos",
+    },
+    {
         id: "16",
         name: "Máscara Aloe y melón",
         description: "Máscara Aloe y melón",
         price: "$2500.-",
         height: "card-height-200",
-        img: "../images/none.png",
+        img: "../images/mascara-melon.png",
         msj: "Mascara%20Aloe%20y%20melon",
     },
     {
@@ -185,7 +194,7 @@ const products = [
         description: "Crema de noche",
         price: "$4500.-",
         height: "card-height-200",
-        img: "../images/none.png",
+        img: "../images/extrafirm-renov.png",
         msj: "Crema%20de%20noche",
     },
     {
