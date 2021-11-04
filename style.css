@@ -47,7 +47,10 @@
     --dior-pink: #B2526B;
     --back-grey: #F6F6F6;
     --back-black: #201C1C;
-
+/* vs */
+    --black: #000000;
+    --golden: #C1AC86;
+    --golden-light: #F0E0CC ;
 }
 
 * {
@@ -60,11 +63,12 @@ html {
     font-size: 62.5%;
     font-family: 'Montserrat', sans-serif;
     background-size: 100%;
-    background: #B69D6E;
+    background: var(--golden);
 }
 .header-index {
     position: absolute;
-    background:  linear-gradient(180deg, #B2526B 0%, rgba(255, 255, 255, 0) 10%), linear-gradient(180deg, #F6F6F6 90.3%,  #B69D6E8c 100%);
+    /* background:  linear-gradient(180deg, #B2526B 0%, rgba(255, 255, 255, 0) 10%), linear-gradient(180deg, #F6F6F6 90.3%,  #B69D6E8c 100%); */
+    background-color: var(--black);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -75,7 +79,7 @@ html {
     border: none;
     padding: 10% 0px;
 }
-.header-index img {
+.header-logo-index{
     max-width: 140px;
     width: 30%;
     height: auto;
@@ -91,11 +95,11 @@ html {
     align-self: center;
 }
 .header-index h1 {
-    font-size: 1.8rem;
-    font-weight: 700;
+    font-size: 2.5rem;
+    font-weight: 400;
     text-transform: uppercase;
     line-height: 2.4rem;
-    color: #B69D6E;
+    color: var(--golden-light);
     margin-bottom: 10px;
 }
 .header-index .header-subtitle {
@@ -123,7 +127,7 @@ html {
     width: 100%;
     min-width: 320px;
     height: 80px;
-    background-color: #F6F6F6;
+    background-color: var(--black);
     border: none;
     z-index: 102;
     box-shadow: 0px 4px 10px rgba(89, 73, 30, 0.1); ;
@@ -156,10 +160,21 @@ html {
 header h1 {
     align-self: flex-end;
     font-size: 1.4rem;
-    font-weight: 700;
+    font-weight: 400;
     text-transform: uppercase;
     line-height: 2.4rem;
-    color: #B69D6E;
+    color: var(--golden-light);
+}
+.decor {
+    position: absolute;
+}
+.decor-top{
+    top: 0;
+    left: 0;
+}
+.decor-bottom {
+    bottom: 0;
+    right: 0;
 }
 .ham {
     border-radius: 50%;
@@ -168,7 +183,7 @@ header h1 {
     height: 40px;
     line-height: 40px;
     text-align: right;
-    color: #B69D6E;
+    color: var(--golden-light);
     font-size: 2.0rem;
     cursor: pointer;
     z-index: 103;
@@ -182,7 +197,7 @@ section {
     justify-content: space-around;
     position: absolute;
     padding: 100px 0px;
-    background-color: #f6f6f6ee;
+    background-color: #000000da;
     z-index: 101;
     top: 80px;
     right: -100vw;
@@ -200,15 +215,15 @@ section {
 
 .main-menu-container-button {
     align-self: center;
-    width: 50%;
+    width: 62%;
     height: 48px;
     max-width: 216px;
     margin-top: 20px;
     padding: 14px 0px;
-    background-color: #F6F6F6;
-    border: solid 1px #B2526B;
+    background-color: var(--black);
+    border: solid 1px var(--golden-light);
     border-radius: 28px;
-    color: #B2526B;
+    color: var(--golden-light);
     font-size: 1.4rem;
     font-weight: 600;
     line-height: 2rem;
@@ -230,7 +245,7 @@ section {
     height: auto;
     margin: 15px 0px 0px;
     padding: 5px 0px;
-    color: #B2526B;
+    color: var(--golden-light);
     font-size: 1.2rem;
     font-weight: 300;
     /* line-height: 1.4rem; */
@@ -274,8 +289,8 @@ main {
     text-align: left;
     font-size: 2.5rem;
     line-height: 3rem;
-    color: #B2526B;
-    text-shadow: 0px 4px 4px rgba(107, 106, 106, 0.25);
+    text-transform: uppercase;
+    color: var(--dior-pink);
 }
 .main-products-big-container,
 .main-beautybox-big-container {
@@ -443,7 +458,7 @@ main {
     height: auto;
     padding: 30px 0;
     padding-top: 85px;
-    background:linear-gradient(180deg, #B2526B 0%, rgba(255, 255, 255, 0) 36%), linear-gradient(180deg, #F6F6F6 90.3%, #C5A58C 100%);
+    background:linear-gradient(180deg, #f6f6f6 0%, rgba(255, 255, 255, 0) 36%), linear-gradient(180deg, #F6F6F6 90.3%, #C1AC86 100%);
 }
 .main-beautybox-container h2 {
     align-self: center;
@@ -452,10 +467,10 @@ main {
     margin: 25px 0px;
     margin-left: 1%;
     text-align: left;
+    text-transform: uppercase;
     font-size: 2.5rem;
     line-height: 3rem;
-    text-shadow: 0px 4px 4px rgba(107, 106, 106, 0.90);
-    color: #F6F6F6;
+    color: var(--dior-pink);
 }
 .main-beautybox-container-article {
     position: relative;
@@ -502,7 +517,7 @@ main {
     width: 100%;
     height: auto;
     padding: 80px 0px;
-    background-color: #F6F6F6;
+    background-color: var(--black);
 }
 .main-gift-big-container {
     position: relative;
@@ -512,7 +527,7 @@ main {
     width: 100%;
     height: auto;
     padding: 20px 0px;
-    background-color: #F6F6F6;
+    background-color: var(--black);
 }
 .gift-text {
     align-self: center;
@@ -521,10 +536,10 @@ main {
     font-weight: 400;
     line-height: 3.7rem;
     text-align: center;
-    color: #201C1C;
+    color: var(--golden-light);
 }
 .gift-text b {
-    color: #B2526B;
+    color: #BA822D;
 }
 .gift-box {
     display: flex;
@@ -546,8 +561,8 @@ main {
     height: 40px;
     margin: 25px auto 0px;
     padding: 6px 20px;
-    background: #FFFFFF;
-    border: 1px solid #B2526B;
+    background: var(--black);
+    border: 1px solid var(--golden-light);
     box-sizing: border-box;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 28px;
@@ -555,12 +570,18 @@ main {
     font-weight: 600;
     text-align: center;
     text-decoration: none;
-    color: #B2526B;
+    color: var(--golden-light);
     line-height: 1.4rem;
 }
 .main-gift-container a:hover{
     background-color: #B2526B;
     color: #FFFFFF;
+}
+.gift-p-container {
+    text-align: center;
+    font-size: 12px;
+    padding: 30px;
+    color: var(--golden-light);
 }
 footer {
     background-color: #B2526B;  
@@ -618,24 +639,20 @@ footer {
 }
 footer a {
     text-decoration: none;
-    color: #201C1C;
+    color: var(--golden-light);
+    font-weight: 600;
 }
-.gift-foto {
+.holidays {
     position: relative;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    background-image: url(./images/adornosnavidad\ \(2\).png);
-    background-size: 20%;
-    margin: 0px auto;
-    padding: 10%;
-    height: auto;
+    height: 100vh;
+    background: linear-gradient(180deg, #C1AC86 0%, #000000 42%);
+}
+.holidays img {
+    height: 100%;
+    position: absolute;
+    top: 0;
 }
 
-.gift-foto img {
-    width: 290px;
-    height: 290px;   
-}
 .text-contactanos-container {
     justify-content: center;
     position: relative;
@@ -644,8 +661,8 @@ footer a {
     align-self: center;
     max-width: 345px;
     width: 90%;
-    height: 270px;
-    margin-bottom: 40px;
+    min-height: 270px;
+    margin: 40px 0 100px 0px ;
     padding: 0px 20px;
     border: none;
 }
