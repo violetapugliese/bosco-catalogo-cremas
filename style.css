@@ -647,11 +647,85 @@ footer a {
     height: 100vh;
     background: linear-gradient(180deg, #C1AC86 0%, #000000 42%);
 }
-.holidays img {
+.holidays-decor {
     height: 100%;
     position: absolute;
     top: 0;
 }
+.holidays-text {
+    position: absolute;
+    bottom: 2rem;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 50%;
+    max-width: 450px;
+}
+.Iam {
+    position: relative;
+    width: 50%;
+    max-width: 250px;
+    margin-bottom: 20px;
+    left: 15rem;
+    color: var(--golden-light);
+  }
+  .Iam h1 {
+    margin: 0;
+    font-size: calc(2.5rem + 1.5vw);
+  }
+  .textIam{
+      font-family: "Dancing Script", cursive;
+      font-weight: 700; 
+      display: flex;
+      margin-bottom: 2rem;
+  }
+  .Iam .container-innerIam {
+    float: right;
+    overflow: hidden;
+    position: relative;
+    height: calc(2.5rem + 1.5vw);
+  }
+  .Iam .innerIam {
+    will-change: transform;
+    display: inline-block;
+    position: relative;
+    flex-wrap: nowrap;
+    top: 0;
+    left: 0;
+    line-height: calc(2.5rem + 1.5vw);
+    /*animation*/
+    animation: move 6s;
+    /*animation-iteration-count*/
+    animation-iteration-count: infinite;
+    /*animation-delay*/
+    animation-delay: 1s;
+  }
+  @keyframes move {
+    0% {
+      top: 0px;
+    }
+    5% {
+      top: 0px;
+    }
+    25% {
+      top: -100%;
+    }
+    30% {
+      top: -100%;
+    }
+    50% {
+      top: -200%;
+    }
+    55% {
+      top: -200%;
+    }
+    75% {
+      top: -300%;
+    }
+    80% {
+      top: -300%;
+    }
+  }
 
 .text-contactanos-container {
     justify-content: center;
@@ -681,8 +755,7 @@ footer a {
         position: relative;
     }
 }
-@media screen and (min-width: 320px) {
-}
+
 @media screen and (min-width: 479px) {
     .main-products-container-article, 
     .main-beautybox-container-article {
@@ -694,6 +767,9 @@ footer a {
     .caja{
         margin-right: 25px;
     }
+    .Iam {
+        left: 15rem;
+      }
 }
 @media screen and (min-width: 767px) {
     .header-title-container {
@@ -718,6 +794,12 @@ footer a {
     .main-gift-big-container a {
         zoom: 1.5;
     }
-    
+    .Iam {
+        left: 25rem;
+      }
 }
-@media screen and (min-width: 1024px) {}
+@media screen and (min-width: 1024px) {
+    .Iam {
+        left: 30rem;
+      }
+}
