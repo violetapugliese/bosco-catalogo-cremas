@@ -29,7 +29,10 @@
     <link rel="icon" type="image/png" href="../images/logo-dorado-bosco.png">
     <link rel="stylesheet" href="../style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
-    <script async src="/index.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <script async src="../index.js"></script>
 </head>
 
 <body>
@@ -37,7 +40,7 @@
         <div class="header-big-container">
             <div class="header-logo-container">
                 <a class="header-img-logo" href="../index.html">
-                    <img class="header-logo" src="../images/logo-dorado-bosco.png" alt="logo-bosco.black">
+                    <img class="header-logo" src="../images-v2/logo-dorado.png" alt="logo-bosco.black">
                 </a>
                 <div class="header-title-container">
                     <h1>catálogo de cosmética</h1>
@@ -53,7 +56,7 @@
                 class="main-menu-container-whatsapp">
                 <p class="whatsapp-button">¿Querés saber cuál es tu producto ideal? <b>Pedí un turno de
                         asesoramiento.</b></p>
-                <img class="menu-logo-whatsapp" src="../images/whatsapp-menu.png" alt="logo-whatsapp">
+                <img class="menu-logo-whatsapp" src="../images-v2/whatsapp-icon.png" alt="logo-whatsapp">
             </a>
         </nav>
     </header>
@@ -83,19 +86,42 @@
                         class="icon-whatsapp meddia-button"></i></a>
             </div>
         </section>
-        <!-- <div class="gift-foto">
-            <img src="../images/navidad (1).png" alt="regalo navidad" width="290" height="290">
-            <img src="../images/navidad (2).png" alt="regalo navidad" width="290" height="290">
-        </div>   -->
+        <section class="holidays">
+            <div class="Iam">
+                <h1>
+                    <span class="textIam">Regalá
+                        <br>
+                    </span>
+                    <span class="container-innerIam">
+                        <div class="innerIam">
+                            Frescura<br />
+                            Confianza<br />
+                            Suavidad<br />
+                            Perfección
+                        </div>
+                    </span>
+                </h1>
+            </div>
+            <img class="holidays-decor" src="../images-v2/dorado-big.png" alt="decor golden">
+            <img class="holidays-text" src="../images-v2/holiday-text.png" alt="">
+            <canvas id='snow'></canvas>  
+        </section>
         <section class="main-gift-container" id="gift">
             <div class="main-gift-big-container">
-                <p class="gift-text">¿Te gustaría<br>regalar una<br><b>BeautyBox</b>?</p>
+                <div>
+                    <p class="gift-text">¿Te gustaría<br>regalar una<br><b>BeautyBox</b>?</p>
+                    <div class="gift-p-container">
+                        <p>Incluye: Set de productos a elección + esponja <br> + vincha + cajón contenedor</p>
+                    </div>
+                </div>
                 <div class="gift-box">
                     <img class="gift-image" src="../images/goldbox.png"
                         alt="main-products-container-article de regalos dorada">
                     <a class="gift-button"
                         href="https://api.whatsapp.com/send?phone=5491131709144&text=%C2%A1Hola!%20%C2%A1Me%20gustar%C3%ADa%20encargar%20una%20BeautyBox%20para%20hacer%20un%20regalo">Encargar
-                        <i class="icon-whatsapp meddia-button"></i></a>
+                        <i class="icon-whatsapp meddia-button"></i>
+                    </a>
+
                 </div>
             </div>
         </section>
@@ -122,6 +148,67 @@
         <p class="copyRigth">Sitio web creado y desarrollado por <a href="https://github.com/violetapugliese">Violeta
                 Pugliese</a> ©</p>
     </footer>
+    <script async>
+        var canvas = document.getElementById('snow');
+var ctx = canvas.getContext('2d');
+
+var w = canvas.width = window.innerWidth;
+var h = canvas.height = 150;
+
+var num = 30;
+var tamaño = 10;
+var elementos = [];
+
+inicio();
+nevada();
+
+window.addEventListener("resize", function() {
+  w = canvas.width = window.innerWidth;
+  h = canvas.height = 150;
+});
+
+function inicio() {
+  for (var i = 0; i < num; i++) {
+    elementos[i] = {
+      x: Math.ceil(Math.random() * w),
+      y: Math.ceil(Math.random() * h),
+      toX: Math.random() * 10 - 5,
+      toY: Math.random() * 5 + 1,
+      tamaño: Math.random() * tamaño
+    }
+  }
+}
+
+function nevada() {
+  ctx.clearRect(0, 0, w, h);
+  for (var i = 0; i < num; i++) {
+    var e = elementos[i];
+    ctx.beginPath();
+    cristal(e.x, e.y, e.tamaño);
+    ctx.fill();
+    ctx.stroke();
+    e.x = e.x + e.toX;
+    e.y = e.y + e.toY;
+    if (e.x > w) { e.x = 0;}
+    if (e.x < 0) { e.x = w;}
+    if (e.y > h) { e.y = 0;}
+  }
+  timer = setTimeout(nevada,40);
+}
+
+function cristal(cx, cy, long) {
+  ctx.fillStyle = "#f0e0cc";
+  ctx.lineWidth = long / 20;
+  ctx.arc(cx, cy, long / 15, 0, 2 * Math.PI);
+  for (i = 0; i < 6; i++) {
+    ctx.strokeStyle = "white";
+    ctx.moveTo(cx, cy);
+    ctx.lineTo(cx + long / 2 * Math.sin(i * 60 / 180 * Math.PI),
+               cy + long / 2 * Math.cos(i * 60 / 180 * Math.PI));
+  }
+}
+
+    </script>
 </body>
 
 </html>

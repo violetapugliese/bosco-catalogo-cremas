@@ -31,10 +31,9 @@
 </head>
 <body>
     <header class="header-index">
-            <img class="header-logo-index" src="./images/logo-dorado-bosco.png" alt="logo-bosco.black">
+            <img class="header-logo-index" src="./images-v2/logo-dorado.png" alt="logo-bosco.black">
             <div class="header-title-container-index">
-                <h1>catálogo de cosmética</h1>
-                <p class="header-subtitle">El producto ideal<br>para la piel perfecta</p>
+                <h1>catálogo de <br> cosmética</h1>
             </div>
             <nav class="main-menu-container-index">
                 <a href="./pages/products.html" class="main-menu-container-button">Productos</a>
@@ -42,9 +41,72 @@
                 <a href="./pages/products.html#gift" class="main-menu-container-button">¡Hacer un regalo!</a>
                 <a href="https://api.whatsapp.com/send?phone=5491131709144&text=%C2%A1Hola!%20Me%20gustar%C3%ADa%20solicitar%20un%20turno%20Beauty%20de%20asesoramiento" class="main-menu-container-whatsapp">
                     <p class="whatsapp-button">¿Querés saber cuál es tu producto ideal? <b>Pedí un turno de asesoramiento.</b></p>
-                    <img class="menu-logo-whatsapp" src="./images/whatsapp-menu.png" alt="logo-whatsapp">
+                    <img class="menu-logo-whatsapp" src="./images-v2/whatsapp-icon.png" alt="logo-whatsapp">
                 </a>
             </nav>
-    </header>
+            <img class="decor decor-top" src="./images-v2/dorado-top-left.png" alt="decor golden"> 
+            <img class="decor decor-bottom" src="./images-v2/dorado-bottom-right.png" alt="decor golden"> 
+            <canvas id='snow'></canvas>  
+        </header>
+        <script async>
+            var canvas = document.getElementById('snow');
+var ctx = canvas.getContext('2d');
+
+var w = canvas.width = window.innerWidth;
+var h = canvas.height = window.innerHeight;
+
+var num = 30;
+var tamaño = 10;
+var elementos = [];
+
+inicio();
+nevada();
+
+window.addEventListener("resize", function() {
+  w = canvas.width = window.innerWidth;
+  h = canvas.height = 150;
+});
+
+function inicio() {
+  for (var i = 0; i < num; i++) {
+    elementos[i] = {
+      x: Math.ceil(Math.random() * w),
+      y: Math.ceil(Math.random() * h),
+      toX: Math.random() * 10 - 5,
+      toY: Math.random() * 5 + 1,
+      tamaño: Math.random() * tamaño
+    }
+  }
+}
+
+function nevada() {
+  ctx.clearRect(0, 0, w, h);
+  for (var i = 0; i < num; i++) {
+    var e = elementos[i];
+    ctx.beginPath();
+    cristal(e.x, e.y, e.tamaño);
+    ctx.fill();
+    ctx.stroke();
+    e.x = e.x + e.toX;
+    e.y = e.y + e.toY;
+    if (e.x > w) { e.x = 0;}
+    if (e.x < 0) { e.x = w;}
+    if (e.y > h) { e.y = 0;}
+  }
+  timer = setTimeout(nevada,40);
+}
+
+function cristal(cx, cy, long) {
+  ctx.fillStyle = "#f0e0cc";
+  ctx.lineWidth = long / 20;
+  ctx.arc(cx, cy, long / 15, 0, 2 * Math.PI);
+  for (i = 0; i < 6; i++) {
+    ctx.strokeStyle = "white";
+    ctx.moveTo(cx, cy);
+    ctx.lineTo(cx + long / 2 * Math.sin(i * 60 / 180 * Math.PI),
+               cy + long / 2 * Math.cos(i * 60 / 180 * Math.PI));
+  }
+}
+        </script>
 </body>
 </html>
