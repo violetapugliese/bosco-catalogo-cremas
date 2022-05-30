@@ -213,7 +213,16 @@ section {
 .showClose {
   right: -100vw;
 }
-
+.main-menu-container-text{
+  align-self: center;
+  font-size: 1.4rem;
+  width: 62%;
+  height: 48px;
+  max-width: 216px;
+  color: var(--golden-light);
+  text-align: center;
+  margin-top: 1rem;
+}
 .main-menu-container-button {
   align-self: center;
   width: 62%;
